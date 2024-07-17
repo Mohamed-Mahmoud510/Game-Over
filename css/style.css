@@ -1,0 +1,109 @@
+body {
+    font-family: "Comfortaa", cursive;
+    background-color: #272b30;
+}
+
+header img {
+    height: 30vh;
+}
+
+nav.fixed-top {
+    top: 25%;
+}
+
+nav .nav-link {
+    font-family: "Comfortaa", cursive;
+    font-size: 13px;
+
+}
+
+nav .navbar-nav {
+    --bs-nav-link-hover-color: rgba(13, 110, 253, 0.75);
+    --bs-navbar-active-color: rgb(13, 110, 253);
+}
+
+nav .container {
+    background: rgb(58, 73, 123);
+    border-radius: 20px;
+}
+
+nav .img-fluid {
+    max-width: 50px;
+}
+
+.badge {
+    background-color: #32383e;
+}
+
+.main-card {
+    filter: grayscale(0.7);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.main-card:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+#details small.btn{
+    cursor: text;
+    padding: 0px 20px;
+}
+
+#details i {
+    right: 10%;
+    top: 0%;
+}
+.loader {
+    width: 16px;
+    height: 16px;
+    box-shadow: 0 30px, 0 -30px;
+    border-radius: 4px;
+    background: currentColor;
+    display: block;
+    margin: -50px auto 0;
+    position: relative;
+    color: #FFF;
+    transform: translateY(30px);
+    box-sizing: border-box;
+    animation: animloader 2s ease infinite;
+}
+
+.loader::after,
+.loader::before {
+    content: '';
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    box-shadow: 0 30px, 0 -30px;
+    border-radius: 4px;
+    background: currentColor;
+    color: #FFF;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    animation: animloader 2s 0.2s ease infinite;
+}
+
+.loader::before {
+    animation-delay: 0.4s;
+    left: 60px;
+}
+
+@keyframes animloader {
+    0% {
+        top: 0;
+        color: white;
+    }
+
+    50% {
+        top: 30px;
+        color: rgba(255, 255, 255, 0.2);
+    }
+
+    100% {
+        top: 0;
+        color: white;
+    }
+}

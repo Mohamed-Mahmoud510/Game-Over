@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Games</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section id="Home" class>
+            <header>
+                <img src="wraper.png" class="w-100 object-fit-cover" alt>
+            </header>
+            <nav class="navbar navbar-expand-lg navbar-dark sticky-top ">
+                <div class="container py-3">
+                    <img src="logo-sm.png" class="img-fluid" alt="Logo">
+                    <a class="navbar-brand" href="#">GAME REVIEWS</a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-id="this.id"
+                                    aria-current="page"
+                                    href="#">MMORPG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-id href="#">SHOOTER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-id href="#">SAILING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-id
+                                    href="#">PERMADEATH</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-id
+                                    href="#">SUPERHERO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-id href="#">PIXEL</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <main>
+                <section class="py-4">
+                    <div class="container py-5 text-white">
+                        <span id="dataLoader"
+                            class="loader mx-auto my-3"></span>
+                        <div class="row gy-3" id="myData">
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </section>
+
+        <section id="details" class="position-relative my-5 d-none">
+            <i
+                class="fa-solid fa-x btn btn-outline-primary position-absolute"
+                id="closeBtn"></i>
+            <div class="container text-white">
+                <span id="detailsLoader" class="loader mx-auto my-3"></span>
+                <h2 class="mb-4">Details Game</h2>
+                <div class="row" id="myDetails">
+
+                </div>
+            </div>
+        </section>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
